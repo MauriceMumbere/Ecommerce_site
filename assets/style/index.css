@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+}
+.flex{
+    display: flex;
+}
+/******************************\
+            Header style        
+\******************************/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 160px 16px 160px; 
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.nav-link ul{
+    display: flex;
+    gap: 5rem;
+}
+.nav-link ul li a{
+    color: rgba(0, 0, 0, 0.479);
+}
+.nav-link_icons{
+    display: flex;
+    gap: 2rem;
+}
+.nav-link_icons img{
+    width: 25px;
+    height: 25px;
+}
+.nav-link_search{
+    padding: 16px;
+    width: 300px;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(237, 237, 237);
+}
+/******************************\
+            Main style        
+\******************************/
+/**** hero section  ****/
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 566px;
+    background-color: rgb(33, 28, 36);
+    gap: 10rem;
+    color: white;
+}
+.hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.hero-content h3{
+    font-size: ;
+}
+.hero-content h1{
+    font-size: 5rem;
+}
+.hero-content .wegth-normal{
+    font-weight: normal;
+}
+.hero-content p{
+    font-size: 16px;
+}
+.hero-content button{
+    padding: 16px 56px 16px 56px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    color: white;
+    margin-top: 1rem;
+}
+/**** Product section  ****/
+.grdid-product{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+}
+.grdid-product p{
+    color: rgba(0, 0, 0, 0.418);
+}
+.product{
+    display: flex;
+    align-items: center;
+}
+.grdid-product .product_1{
+    background-color: rgb(237, 237, 237);
+}
+.grdid-product .product_2{
+    background-color: rgb(53, 53, 53);
+}
+.grdid-product .product_3{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.grdid-product .product_4{
+    background-color: rgb(237, 237, 237);
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+/**** Category section  ****/
+.category{
+    padding: 80px 160px 80px 160px;
+    background-color: rgb(250, 250, 250);
+}
+.category .category_card{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+.category .category_card img{
+    height: 80px;
+    width: 90px;
+}
+.category .category_card h3{
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+}
+.category .category_card .category_card--items{
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+/**** Filter_product section style ****/
+.filterProduct{
+    padding: 56px 160px 56px 160px;
+}
+.filterProduct_link ul{
+    gap: 25px;
+}
+.filterProduct ul li:not(:first-child){
+    color:rgba(0, 0, 0, 0.438);
+}
+.filterProduct_link--active{
+    position: relative;
+}
+.filterProduct_link--active::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    height: 2px;
+    width: 100%;
+    background-color: #000000;
+}
+.filterProduct_card{
+    display: grid;
+}
+/**** Summer section style ****/
+.summer{
+    background-image: url(../images/image_de_fond.png);
+    height: 448px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+.summer_content{
+    margin: auto;
+    text-align: center;
+}
+.summer_content h2{
+    font-size: 4.5rem;
+}
+.summer_content p{
+    font-size: 16px;
+}
+.summer_content button{
+    padding: 16px 56px 16px 56px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    color: white;
+    margin-top: 2rem;
+}
+/******************************\
+    Footer style        
+\******************************/
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 104px 160px 104px 160px; 
+}
+footer p, footer a, footer h2{
+    color: white;
+}
+footer h2{
+    padding-bottom: 20px;
+}
+footer p{
+    padding-top: 25px;
+    line-height: 1.5rem;
+}
+footer ul li{
+    line-height: 2.5rem;
+}
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_card{
+    display: flex;
+}
+.footer_card--link{
+    display: flex;
+    gap: 8rem;
+}
+.footer_social{
+    display: flex;
+    gap: 16px;
+}
