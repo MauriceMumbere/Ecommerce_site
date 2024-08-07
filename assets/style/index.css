@@ -22,7 +22,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 87%;
 }
 .nav-link ul{
     display: flex;
@@ -41,7 +41,7 @@ header{
 }
 .nav-link_search{
     padding: 16px;
-    width: 300px;
+    width: 250px;
     outline: none;
     border: none;
     border-radius: 0.5rem;
@@ -64,16 +64,16 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 14rem;
 }
-.hero-content h3{
-    font-size: ;
+.hero-content h3, .hero-content p{
+    color: rgba(255, 255, 255, 0.308);
 }
 .hero-content h1{
     font-size: 5rem;
 }
-.hero-content .wegth-normal{
-    font-weight: normal;
+.wegth-normal{
+    font-weight: 100;
 }
 .hero-content p{
     font-size: 16px;
@@ -95,25 +95,52 @@ header{
 .grdid-product p{
     color: rgba(0, 0, 0, 0.418);
 }
+.grdid-product h2{
+    padding-bottom: 16px;
+}
 .product{
     display: flex;
     align-items: center;
 }
 .grdid-product .product_1{
     background-color: rgb(237, 237, 237);
+    gap: 3rem;
+    
 }
 .grdid-product .product_2{
     background-color: rgb(53, 53, 53);
 }
+.grdid-product .product_2 h2{
+    color: white;
+    font-size: 29px;
+}
 .grdid-product .product_3{
     grid-column: 1/3;
     grid-row: 1/2;
+    padding-right: 1rem;
+}
+.grdid-product .product_3 h2{
+    font-size: 2rem;
 }
 .grdid-product .product_4{
     background-color: rgb(237, 237, 237);
     grid-column: 3/4;
     grid-row: 1/3;
+    padding-left: 2rem;
 }
+.grdid-product .product_4 h2{
+    font-size: 64px;
+}
+.grdid-product .product_4 button{
+    padding: 16px 56px 16px 56px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    color: black;
+    margin-top: 1rem;
+}
+
 /**** Category section  ****/
 .category{
     padding: 80px 160px 80px 160px;
@@ -166,6 +193,84 @@ header{
 }
 .filterProduct_card{
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+/**** Discounts section style  */
+.discounts{
+    padding: 56px 160px 56px 160px;
+}
+.discounts h2{
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+.discounts_content{
+    display:flex;
+    gap: 1rem;
+}
+.discounts_card{
+    background-color: rgb(237, 237, 237);
+    border-radius: 25px;
+    flex: 1;
+    text-align: center;
+    padding: 1.4rem;
+}
+.discounts_card p{
+    padding: 1rem 0;
+}
+.discounts_card button{
+    padding: 16px 56px 16px 56px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    color: white;
+    margin-top: 2rem;
+}
+.coeur{
+    text-align: right;
+    margin-bottom: 0.6rem;
+}
+/**** Show section style  */
+.show{
+    display: flex;
+}
+.show_card{
+    padding: 1rem;
+}
+.show_card img{
+    width: 280px;
+    height: 300px;
+}
+.show_card p{
+    color: rgba(0, 0, 0, 0.473);
+    line-height: 24px;
+    line-height: 24px;
+}
+.show_card h2{
+    font-size: 33px;
+}
+.show_card button{
+    padding: 16px 56px 16px 56px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    color: black;
+    margin-top: 2rem;
+}
+.bg_gray--200{
+    background-color: rgb(249, 249, 249);
+}
+.bg_gray--500{
+    background-color: rgb(234, 234, 234);
+}
+.bg_black{
+    background-color: rgb(44, 44, 44);
+}
+.text_center{
+    text-align: center;
 }
 /**** Summer section style ****/
 .summer{
@@ -181,6 +286,7 @@ header{
 }
 .summer_content h2{
     font-size: 4.5rem;
+    color: white;
 }
 .summer_content p{
     font-size: 16px;
