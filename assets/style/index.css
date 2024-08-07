@@ -9,6 +9,15 @@
 .flex{
     display: flex;
 }
+.justify_content_space_betxeen{
+    justify-content: space-between;
+}
+.align_center{
+    align-items: center;
+}
+.gap-20{
+    gap: 20px;
+}
 /******************************\
             Header style        
 \******************************/
@@ -234,14 +243,15 @@ header{
 }
 /**** Show section style  */
 .show{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 .show_card{
     padding: 1rem;
 }
 .show_card img{
-    width: 280px;
-    height: 300px;
+    width: 300px;
+    height: 366px;
 }
 .show_card p{
     color: rgba(0, 0, 0, 0.473);
